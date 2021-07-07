@@ -8423,8 +8423,20 @@ $(function(){
 	var max_fields = 20; //maximum input boxes allowed
 	var wrapper = $("[data-parent='add-form-row'] .form-input-wrapper"); //Fields wrapper
 	var add_button = $("[data-add='form-row']"); //Add button ID
+	var $eventsPicker = $('#eventsPicker');
 	
 	var x = 1; //initlal text box count
+
+	console.log('ready here....')
+
+	if ($eventsPicker) {
+		$eventsPicker.calendarsPicker({
+          onSelect: function(date) { 
+          	alert('You picked ' + date[0].formatDate()); 
+          }
+      	});
+	}
+	 
 	
 	$(add_button).click(function(e){ //on add input button click
 		e.preventDefault();

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title> error </title>
+	<title> Components </title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="icon.png">
@@ -86,7 +86,7 @@
 	<div class="wrapper">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="index.html">الصفحة الرئيسية</a></li>
-			<li class="breadcrumb-item active" aria-current="page">إضافة مشكلة</li>
+			<li class="breadcrumb-item active" aria-current="page">project name</li>
 		</ol>
 	</div>
 </nav>
@@ -95,11 +95,77 @@
 <main class="main_content" id="mainContent">
 	<div class="wrapper">
 
-		<div class="sys_error">
-			<i class="fas fa-exclamation-triangle"></i>
-			<h4 class="title">Attantion!</h4>
-			<p>Sorry, We could not found the page that asked for.</p>
-		</div>	
+		<div class="project_page">
+			<aside>
+				<div class="mblg">
+					<h2 class="title text-primary mblg">Project Name</h2>
+					<div class="text-large text-primary mbxs"><a href="project_page.html">Document</a></div>
+					<div class="text-large text-primary mbxs"><a href="project_iusses.html">Iusses</a></div>
+					<div class="text-large text-primary mbxs"><a class="active" href="project_risks.html">Risks</a></div>
+					<div class="text-large text-primary mbxs"><a href="project_change_request.html">Change Request</a></div>
+				</div>
+				<div class="mblg even_odd">
+					<div class="mbxs">
+						<div class="text-large text-primary">Torch bearer:</div>
+						<div class="text-large">Mostafa Selim</div>
+					</div>
+					<div class="mbxs">
+						<div class="text-large text-primary">Duration:</div>
+						<div class="text-large">5 Months</div>
+					</div>
+					<div class="mbxs">
+						<div class="text-large text-primary">Last Update:</div>
+						<div class="text-large">11-10-2017</div>
+					</div>
+					<div class="mbxs">
+						<div class="text-large text-primary">Status:</div>
+						<div class="text-large">On Track</div>
+					</div>
+					<div class="mbxs">
+						<div class="text-large text-primary">Project E-Mail:</div>
+						<div class="text-large">mr.ahmedsaeed1@gmail.com</div>
+					</div>
+				</div>
+			</aside>
+			<div class="content">
+				<div class="flex flex-content-sb flex-items-center mbsm">
+					<h3 class="text-accent">Risks List</h3>
+					<div>
+						<a href="add_risk.html" class="btn btn-wide btn-primary">Add Risk</a>
+						<a href="risks.html" class="btn btn-wide btn-link">view all Risk</a>
+					</div>
+				</div>
+				
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Id</th>
+							<th>Title</th>
+							<th align="center">Owner</th>
+							<th align="center">Severity</th>
+							<th align="center">Status</th>
+							<th align="center">Due Date</th>
+							<th align="center">View</th>
+							<th align="center">Edit</th>
+							<th align="center">Needs Update?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>T100205</td>
+							<td>Iusse title here</td>
+							<td align="center">Project Manger</td>
+							<td align="center">2</td>
+							<td align="center">Active</td>
+							<td align="center">1483/8/25</td>
+							<td align="center"><a href="#" class="btn btn-link"><i class="fas fa-eye"></i></a></td>
+							<td align="center"><a href="#" class="btn btn-link"><i class="fas fa-edit"></i></a></td>
+							<td align="center"><i class="fas fa-check"></i></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
 
 	</div>
 </main>

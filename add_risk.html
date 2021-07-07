@@ -86,8 +86,8 @@
    <div class="wrapper">
       <ol class="breadcrumb">
          <li class="breadcrumb-item"><a href="project_page.html">project name here</a></li>
-         <li class="breadcrumb-item"><a href="project_iusses.html">project iusses</a></li>
-         <li class="breadcrumb-item active" aria-current="page">add iusse</li>
+         <li class="breadcrumb-item"><a href="project_risks.html">project risks</a></li>
+         <li class="breadcrumb-item active" aria-current="page">add risk</li>
       </ol>
    </div>
 </nav>
@@ -130,95 +130,103 @@
          </aside>
          <div class="content">
             <div class="flex flex-content-sb flex-items-center mbsm">
-               <h3 class="text-accent">Add Iusses</h3>
+               <h3 class="text-accent">Add Risk</h3>
             </div>
             
             <div class="form">
                <div class="form_row">
-                  <label for="" class="form_label">إسم المشكلة <span class="required">*</span></label>
+                  <label for="" class="form_label">title <span class="required">*</span></label>
                   <div>
                      <input type="text" name="" class="form_input form_input_lg" placeholder="اسم المشكلة">
                      <div class="invalid-feedback" style="display:block;">رسالة لاظهار خطأ في الادخال</div>
                   </div>
                </div>
                <div class="form_row">
-                  <label for="" class="form_label">تفاصيل المشكلة</label>
+                  <label for="" class="form_label">discraption</label>
                   <div>
-                     <input type="text" name="" class="form_input" placeholder="تفاصيل المشكلة">
+                     <textarea name="" class="form_input charcounter" data-chars="50" data-format="%1 characters to go!" placeholder="discraption"></textarea>
                   </div>
                </div>
                <div class="form_row">
-                  <label for="" class="form_label">مالك المشكلة <span class="required">*</span></label>
-                  <div class="select_wrapper">
-                     <select name="" class="form_input" id="">
-                        <option>-- نوع اختيار هنا --</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                     </select>
-                  </div>
-               </div>
-               <div class="form_row">
-                  <label for="" class="form_label"> تاريخ الاستحقاق</label>
-                  <input type="text" name="" class="form_input" placeholder="تفاصيل المشكلة">
-               </div>
-               <div class="form_row">
-                  <label for="" class="form_label">فئة المشكلة</label>
-                  <div class="select_wrapper">
-                     <select name="" class="form_input" id="">
-                        <option>-- نوع اختيار هنا --</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                     </select>
-                  </div>
-               </div>
-               <div class="form_row">
-                  <label for="" class="form_label"> فئة فرعية للمشكلة</label>
-                  <div class="select_wrapper">
-                     <select name="" class="form_input" id="">
-                        <option>-- نوع اختيار هنا --</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                     </select>
-                  </div>
-               </div>
-               <div class="form_row">
-                  <label for="" class="form_label">تأثير المشكلة</label>
-                  <div class="select_wrapper">
-                     <select name="" class="form_input" id="">
-                        <option>-- نوع اختيار هنا --</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                     </select>
-                  </div>
-               </div>
-               <div class="form_row">
-                  <label for="" class="form_label"> خطة الرد</label>
+                  <label for="" class="form_label">Owners</label>
                   <div>
-                     <textarea name="" class="form_input charcounter" data-chars="50" data-format="%1 characters to go!" placeholder=" خطة الرد"></textarea>
+                     <input type="text" name="" class="form_input" placeholder="Owners">
                   </div>
                </div>
                <div class="form_row">
-                  <label for="" class="form_label"> المرفقات</label>
-                  <div class="custom-file">
-                     <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                     <label class="custom-file-label" for="validatedCustomFile">اختار ملف...</label>
+                  <label for="" class="form_label">date</label>
+                  <div>
+                     <input type="text" name="" class="form_input" placeholder="date here">
                   </div>
                </div>
                <div class="form_row">
-                  <label for="" class="form_label"> المرفقات</label>
-                  <div class="custom-file">
-                     <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                     <label class="custom-file-label" for="validatedCustomFile">اختار ملف...</label>
+                  <label for="" class="form_label">risk category <span class="required">*</span></label>
+                  <div class="select_wrapper">
+                     <select name="" class="form_input" id="">
+                        <option>-- choose risk category --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="form_row">
+                  <label for="" class="form_label">risk sub category <span class="required">*</span></label>
+                  <div class="select_wrapper">
+                     <select name="" class="form_input" id="">
+                        <option>-- choose risk sub category --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="form_row">
+                  <label for="" class="form_label">risk impact <span class="required">*</span></label>
+                  <div class="select_wrapper">
+                     <select name="" class="form_input" id="">
+                        <option>-- choose risk impact --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="form_row">
+                  <label for="" class="form_label">risk probiblity <span class="required">*</span></label>
+                  <div class="select_wrapper">
+                     <select name="" class="form_input" id="">
+                        <option>-- choose risk probiblity --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="form_row">
+                  <label for="" class="form_label">Severity risk response plan</label>
+                  <div>
+                     <textarea name="" class="form_input charcounter" data-chars="50" data-format="%1 characters to go!" placeholder="Severity risk response pl"></textarea>
+                  </div>
+               </div>
+               <div class="form_row">
+                  <label for="" class="form_label"> Attachments</label>
+                  <div>
+                     <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                        <label class="custom-file-label" for="validatedCustomFile">اختار ملف...</label>
+                     </div>
+
+                     <div class="custom-file mtmd">
+                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                        <label class="custom-file-label" for="validatedCustomFile">اختار ملف...</label>
+                     </div>
                   </div>
                </div>
                
                <div class="form_row form_submit">
-                  <button type="button" class="btn btn-secondary btn-wide">إلغاء</button>
-                  <button type="submit" class="btn btn-primary btn-wide">حفظ</button>
+                  <button type="button" class="btn btn-secondary btn-wide">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-wide">Save</button>
                </div>
             </div>
          </div>

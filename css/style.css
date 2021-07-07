@@ -11682,19 +11682,12 @@ div.ms-inputuserfield {
 
 .wrapper {
   position: relative;
-  *zoom: 1;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1280px;
+  width: 1600px;
+  max-width: 94%;
   padding-right: 20px;
   padding-left: 20px; }
-
-.wrapper:before, .wrapper:after {
-  content: " ";
-  display: table; }
-
-.wrapper:after {
-  clear: both; }
 
 .main_content {
   padding: 24px 0 48px; }

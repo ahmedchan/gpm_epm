@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title> error </title>
+	<title> My Notifications </title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="apple-touch-icon" href="icon.png">
@@ -85,8 +85,8 @@
 <nav aria-label="breadcrumb" class="breadcrumb-container">
 	<div class="wrapper">
 		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="index.html">الصفحة الرئيسية</a></li>
-			<li class="breadcrumb-item active" aria-current="page">إضافة مشكلة</li>
+			<li class="breadcrumb-item"><a href="support.html">support</a></li>
+			<li class="breadcrumb-item active" aria-current="page">suport request</li>
 		</ol>
 	</div>
 </nav>
@@ -95,11 +95,76 @@
 <main class="main_content" id="mainContent">
 	<div class="wrapper">
 
-		<div class="sys_error">
-			<i class="fas fa-exclamation-triangle"></i>
-			<h4 class="title">Attantion!</h4>
-			<p>Sorry, We could not found the page that asked for.</p>
-		</div>	
+
+		<div class="flex flex-content-sb flex-items-center">
+			<h4 class=" text-accent mbxlg">support request</h4>
+		</div>
+
+		<div class="btn-group">
+			<a href="#" class="btn btn-primary btn-wide"> <i class="fas fa-file-pdf"></i> 
+			&nbsp; User Manaual</a>
+			<a href="#" class="btn btn-primary btn-wide"> <i class="fas fa-file-powerpoint"></i> &nbsp; Handbook </a>
+			<a href="#" class="btn btn-primary btn-wide"> PMO Temlpate </a>
+		</div>
+
+
+		<div class="form mtxlg">
+         <div class="form_row">
+            <label for="" class="form_label">project name <span class="required">*</span></label>
+            <div>
+               <input type="text" name="" class="form_input form_input_lg" placeholder="project name">
+               <div class="invalid-feedback" style="display:block;">رسالة لاظهار خطأ في الادخال</div>
+            </div>
+         </div>
+         <div class="form_row">
+            <label for="" class="form_label">support title <span class="required">*</span></label>
+            <div>
+               <input type="text" name="" class="form_input form_input_lg" placeholder="support title">
+            </div>
+         </div>
+         <div class="form_row">
+            <label for="" class="form_label">request details</label>
+            <div>
+               <textarea name="" class="form_input charcounter" data-chars="50" data-format="%1 characters to go!" placeholder="request details"></textarea>
+            </div>
+         </div>
+         <div class="form_row">
+            <label for="" class="form_label">request type <span class="required">*</span></label>
+            <div class="select_wrapper">
+               <select name="" class="form_input" id="">
+                  <option>-- request type --</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+               </select>
+            </div>
+         </div>
+         <div class="form_row">
+            <label for="" class="form_label">priority <span class="required">*</span></label>
+            <div class="select_wrapper">
+               <select name="" class="form_input" id="">
+                  <option>-- choose priority --</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+               </select>
+            </div>
+         </div>
+         <div class="form_row">
+            <label for="" class="form_label"> Attachment</label>
+            <div>
+               <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                  <label class="custom-file-label" for="validatedCustomFile">اختار ملف...</label>
+               </div>
+            </div>
+         </div>
+         
+         <div class="form_row form_submit">
+            <button type="button" class="btn btn-secondary btn-wide">Cancel</button>
+            <button type="submit" class="btn btn-primary btn-wide">Save</button>
+         </div>
+      </div>
 
 	</div>
 </main>
