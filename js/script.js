@@ -53,7 +53,8 @@ $(function(){
 	if ($eventsPicker) {
 		$eventsPicker.calendarsPicker({
           onSelect: function(date) { 
-          	alert('You picked ' + date[0].formatDate()); 
+          	//alert('You picked ' + date[0].formatDate()); 
+          	window.location = 'add_event.html'
           }
       	});
 	}
@@ -170,7 +171,7 @@ $(function(){
 	$('.charcounter').each(function(index, item){
 		//var $this = $(this), counter = Number($this.data('chars')), format = $this.data('format');
 		$item = $(item), counter = Number($item.data('chars')), format = $item.data('format'); 
-		$this.charCounter(counter, { format: format });
+		$item.charCounter(counter, { format: format });
 	});
 
 });

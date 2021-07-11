@@ -6532,16 +6532,16 @@ a.text-dark:hover, a.text-dark:focus {
   color: #c0c0c0 !important; }
 
 .text-info, .text-accent {
-  color: #FFBD5B; }
+  color: #FFBD5B !important; }
 
 .text-danger {
-  color: #ed9393; }
+  color: #ed9393 !important; }
 
 .text-warning {
-  color: #bbb41a; }
+  color: #bbb41a !important; }
 
 .text-dark {
-  color: #666; }
+  color: #666 !important; }
 
 .inblock {
   display: inline-block; }
@@ -11741,7 +11741,8 @@ div.ms-inputuserfield {
 .content_with_sidebar .content {
   width: 960px;
   -ms-flex: 3;
-      flex: 3; }
+      flex: 3;
+  padding-left: 24px; }
 
 .content_with_sidebar .content .form {
   max-width: 95%; }
@@ -11750,14 +11751,26 @@ div.ms-inputuserfield {
   -ms-flex: 1;
       flex: 1; }
 
-.side-links.active h5 {
+.side-links.active h5, .side-links.active h6 {
   color: #FFBD5B !important; }
 
-.side-links.active h5 .title-number {
+.side-links.active h5 .title-number, .side-links.active h6 .title-number {
   border-color: #FFBD5B;
   background-color: #FFBD5B;
   color: #FFFFFF;
   border-style: solid; }
+
+.side-links.active h5 a, .side-links.active h6 a {
+  color: #FFBD5B; }
+
+.side-links.active h6 {
+  color: #666666 !important; }
+
+.side-links.active h6 .title-number {
+  background-color: transparent;
+  border-color: #e5e5e5;
+  border-style: dotted;
+  color: #666666; }
 
 .side-links .card {
   border: 0 !important;
@@ -11765,9 +11778,9 @@ div.ms-inputuserfield {
   background: transparent; }
 
 .side-links .card .card-body {
-  padding: 0; }
+  padding: 0 18px 0 0; }
 
-.side-links h5 {
+.side-links h5, .side-links h6 {
   color: #FFBD5B;
   display: -ms-flexbox;
   display: flex;
@@ -11776,17 +11789,23 @@ div.ms-inputuserfield {
       justify-content: flex-start;
   -ms-flex-align: start;
       align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   position: relative;
-  padding-left: 18px;
+  padding-left: 38px;
   padding-right: 7px;
   font-size: 18px;
   font-weight: normal; }
 
-.side-links h5 .title-number {
-  width: 24px;
-  height: 24px;
+.side-links h5 a, .side-links h6 a {
+  color: #666666; }
+
+.side-links h5.active a, .side-links h6.active a {
+  color: #FFBD5B; }
+
+.side-links h5 .title-number, .side-links h6 .title-number {
+  min-width: 24px;
+  min-height: 24px;
   line-height: 24px;
   display: -ms-flexbox;
   display: flex;
@@ -11805,24 +11824,24 @@ div.ms-inputuserfield {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
 
-.side-links h5 .collapse-text {
+.side-links h5 .collapse-text, .side-links h6 .collapse-text {
   -ms-flex: 2;
       flex: 2; }
 
-.side-links h5:before {
+.side-links h5[data-target]:before, .side-links h6[data-target]:before {
   content: "_";
   position: absolute;
-  top: 50%;
+  top: 22%;
   left: 10px;
   transform: translateY(-50%);
   color: #c0c0c0;
   display: block;
   font-size: 18px; }
 
-.side-links h5.collapsed {
+.side-links h5.collapsed, .side-links h6.collapsed {
   color: #666666; }
 
-.side-links h5.collapsed:before {
+.side-links h5.collapsed:before, .side-links h6.collapsed:before {
   content: "+";
   position: absolute;
   top: 50%;
@@ -11832,10 +11851,43 @@ div.ms-inputuserfield {
   display: block;
   font-size: 18px; }
 
-.side-links h5.collapsed .title-number {
+.side-links h5.collapsed a, .side-links h6.collapsed a {
+  color: #666666; }
+
+.side-links h5.collapsed .title-number, .side-links h6.collapsed .title-number {
   background-color: transparent;
   color: #c0c0c0;
   border-color: #e5e5e5; }
+
+.side-links h5.active, .side-links h6.active {
+  color: #FFBD5B; }
+
+.side-links h6 {
+  font-size: 16px; }
+
+.side-links h6.collapsed[data-target] .title-number {
+  color: #666666;
+  background-color: transparent;
+  border-color: #e5e5e5;
+  border-style: dotted; }
+
+.side-links h6[data-target] .title-number {
+  color: #FFFFFF;
+  background-color: #FFBD5B;
+  border-color: #FFBD5B;
+  border-style: solid; }
+
+.side-links h6.active .title-number {
+  color: #FFFFFF;
+  background-color: #FFBD5B;
+  border-color: #FFBD5B;
+  border-style: solid; }
+
+.side-links h6 .title-number {
+  color: #666666;
+  background-color: transparent;
+  border-color: #e5e5e5;
+  border-style: dotted; }
 
 .side-links ul li a {
   color: #666666;
